@@ -1,0 +1,32 @@
+@import '../../assets/global_variable.scss';
+.card{
+    font-family: poppins,sans-serif;
+    .btn{
+        background-color: $merah;
+        width: 150px !important;
+        padding:7px 5px !important;
+        text-decoration: none;
+        border:none;
+        transition: all ease-in-out 0.5s;
+        &:hover{
+            margin-left:15px!important;
+            background-color: #bd0505;
+        }
+    }
+    .caption-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tag{
+        text-align:center;
+        padding:3px 0;
+        width:80px;
+        border-radius:10px;
+        background-color:#36b37e;
+        color:white;
+    }
+    h1{
+        font-size:25px !important;
+        font-weight: 700;
+    }
+}

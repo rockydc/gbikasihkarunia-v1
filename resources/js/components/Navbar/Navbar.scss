@@ -1,0 +1,147 @@
+@import '../../assets/global_variable.scss';
+
+:root {
+    --mainColor: #ff9800;
+  }
+*{
+    font-family: poppins,sans-serif;
+}
+.router-link-active{
+    background-size: 100% 100%;
+    color:white;
+
+    border-radius: 10px;
+
+}
+.navbar{
+    background-color:rgba(255,255,255,0.5);
+    -webkit-backdrop-filter:blur(19px);
+    backdrop-filter:blur(19px);
+
+    .navbar-brand{
+        img{
+            width: 75px;
+            height: 60px;
+        }
+    }
+.navbar-nav{
+    margin-left: auto !important;
+    width: 40.83vw ;
+    margin-left:50px;
+    display:flex;
+    justify-content: space-between;
+    .nav-item{
+        .nav-link{
+           
+
+       
+            a {
+                background-image: linear-gradient(120deg, rgb(69, 4, 4) 0%, #8e0202 50%);
+                background-repeat: no-repeat;
+                background-size: 100% 0;
+                background-position: 0 88%;
+                transition: background-size 0.25s ease-in;
+                color:black;
+                padding:5px 8px 5px 7px;
+                text-decoration: none;
+            
+              
+                &:hover {
+                background-size: 100% 100%;
+                color:white;
+         
+                border-radius: 10px;
+            
+                }}
+   
+        }
+    }
+}
+
+}
+@include superdesktop{
+    .navbar{
+        .navbar-nav{
+            width: 50.83vw ;
+       
+        }
+    }
+}
+@include desktop{
+    .navbar{
+        .navbar-nav{
+            width: 60.83vw ;
+      
+        }
+    }
+}
+
+@include tablet-xl{
+    .navbar{
+           
+          background-color: black;
+        .navbar-nav{
+            margin:auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          .nav-item{
+              .nav-link{
+                text-align: center;
+                  a{
+                    background-image: linear-gradient(120deg, black 0%, #4f0000 50%);
+                      color:white;
+                    
+                  }
+              }
+          }
+        }
+      
+    }
+    
+}
+@include tablet{
+    .navbar{
+           
+          background-color: black;
+        .navbar-nav{
+            margin:auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          .nav-item{
+              .nav-link{
+                text-align: center;
+                  a{
+                    background-image: linear-gradient(120deg, black 0%, #4f0000 50%);
+                      color:white;
+                     
+                  }
+              }
+          }
+        }
+      
+    }
+    
+}
+@include mobile{
+    .navbar{
+           
+          background-color: black;
+        .navbar-nav{
+            margin:auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          .nav-item{
+              .nav-link{
+                text-align: center;
+                  a{
+                    background-image: linear-gradient(120deg, black 0%, #4f0000 50%);
+                      color:white;
+                   
+                  }
+              }
+          }
+        }
+      
+    }
+    
+}

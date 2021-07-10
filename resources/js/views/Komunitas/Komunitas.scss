@@ -1,0 +1,96 @@
+@import '../../assets/global_variable.scss';
+*{
+    font-family: poppins,sans-serif;
+}
+.section-komunitas{
+   
+    padding-top:100px;
+    position: relative;
+    height: 3700;
+
+    .bg-header{
+        width: 100%;
+        position: absolute;
+        top:16%;
+        z-index:-1;
+        height: calc(2500px + 14.322916vw);
+    }
+    .wrapper{
+        margin:0 auto;
+        padding-top: 100px;
+        position: absolute;
+        left:0;
+        right: 0;
+        top:0%;
+
+  
+    }
+
+}
+@include extra{
+    .container{
+        max-width: 88% !important;
+    }
+}
+@include ultradesktop{
+    .container{
+        max-width: 88% !important;
+    }
+    .bg-header{
+        top:15%!important;
+        height: calc(2400px + 14.322916vw);
+   
+    }
+}
+@include superdesktop{
+    .section-komunitas{
+
+        .bg-header{
+            height: 2475px;
+        }
+    }
+}
+@include desktop{
+    .section-komunitas{
+        height: 2900px;
+        .bg-header{
+            top:14%;
+            height: 2275px;
+        }
+    }
+}
+@include tablet-xl{
+
+    .section-komunitas{
+        height: 3000px;
+        .bg-header{
+            top:15% !important;
+            object-fit: cover;
+        }
+    }
+}
+@include tablet{
+    .container{
+        max-width: 90% !important;
+    }
+    .section-komunitas{
+        height: 3000px;
+        .bg-header{
+            top:15%;
+            object-fit: cover;
+          
+        }
+    }
+}
+@include mobile{
+
+    .section-komunitas{
+        height: 2500px;
+        .bg-header{
+            height: 2075px;
+            width: 100%;
+            top:15%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import '../../assets/global_variable.scss';
+*{
+    font-family: poppins,sans-serif;
+}
+.section-doa{
+    padding-top:100px;
+    .btn{
+        border:none;
+        text-decoration: none;
+        background-color: $merah;
+    }
+   .section-right{
+       padding-top:3.25rem;
+   }
+}
+
+@include extra{
+    .container{
+        max-width: 88% !important;
+    }
+}
+@include ultradesktop{
+    .container{
+        max-width: 88% !important;
+    }
+}
+
+@include tablet-xl{
+    .section-doa{
+        .section-left{
+            text-align: center;
+            ::-webkit-input-placeholder{
+                text-align: center;
+            }
+        }
+        .section-right{
+            text-align: center;
+        }
+    }
+}
+@include tablet{
+    .section-doa{
+        .section-left{
+            text-align: center;
+            ::-webkit-input-placeholder{
+                text-align: center;
+            }
+        }
+        .section-right{
+            text-align: center;
+        }
+    }
+}
+@include mobile{
+    .section-doa{
+        .section-left{
+            text-align: center;
+            ::-webkit-input-placeholder{
+                text-align: center;
+            }
+        }
+        .section-right{
+            text-align: center;
+        }
+    }
+}

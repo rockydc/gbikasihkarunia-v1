@@ -1,0 +1,24 @@
+@import '../../assets/global_variable.scss';
+
+.section-persembahan{
+
+    padding-top:100px;
+    font-family: poppins,sans-serif;
+    .title{
+        font-weight: bolder;
+        font-size:25px;
+    }
+    .quote{
+        font-size:22px;
+        font-weight: 400;
+        color:rgb(106, 106, 106);
+    }
+
+    .content-persembahan{
+    padding-top:100px;
+        p{
+            font-size:23px;
+            color:black;
+        }
+    }
+}

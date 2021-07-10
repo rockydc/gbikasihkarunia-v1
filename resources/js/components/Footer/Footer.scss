@@ -1,0 +1,213 @@
+@import '../../assets/global_variable.scss';
+
+.section-footer{
+position: relative;
+width: 88%;
+height: 800px;
+
+margin:200px auto;
+background: linear-gradient(212.28deg, #FF0909 2.89%, #520A0A 83.82%);
+border-radius: 10px;
+position: relative;
+box-shadow: 0px -10px 60px 0px rgb(0 0 0 / 30%);
+.logo-wrapper{
+    bottom:1.5%;
+    left: 2.5%;
+    position: absolute;
+    z-index:2;
+    img{
+        width:calc(150px + 0.5vw);
+    }
+}
+
+.nav-footer-wrapper{
+    width:88%;
+   
+    height: 300px;
+    margin:0 auto;
+    z-index:2;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    color:whitesmoke;
+    .footer-content{
+        display:flex;
+        flex-direction: column;
+        align-items: space-between;
+
+        height: 250px;
+        .title{
+            font-weight: 700;
+            font-size:20px;
+            margin-bottom: 20px;
+        }
+    
+        .footer-nav{
+            color:whitesmoke;
+            font-size:16px;
+            text-decoration: none;
+        
+    
+        }
+    }
+
+}
+.touch-wrapper{
+    text-align: center;
+    margin:0 auto;
+    z-index: 2;
+    width:70%;
+    height: 500px;
+   
+    color:whitesmoke;
+    .form-wrapper{
+        width: 500px;
+        margin: 0 auto;
+        .form-control{
+            margin-top:20px;
+        }
+        .btn-subscribe{
+            background-color:white; color:black;
+            transition: ease-in-out .3s;
+            border:none;
+            &:hover{
+                background-color: rgb(191, 191, 191);
+            }
+        }
+    }
+}
+
+
+}
+
+.copyright-wrapper{
+    background-color: black;
+    color:whitesmoke;
+    padding: 10px 50px;
+}
+
+@include ultradesktop{
+    .section-footer{
+   
+        .nav-footer-wrapper{
+            width: 100%;
+           
+        }
+    }
+}
+@include tablet-xl{
+    .section-footer{
+        height: 1200px;
+        
+        .nav-footer-wrapper{
+            width: 90%;
+            flex-wrap: wrap;
+            height: 600px;
+          
+           
+        }
+        .touch-wrapper{
+            text-align: center;
+            margin:0 auto;
+            z-index: 2;
+            width:70%;
+            height: 500px;
+           
+            color:whitesmoke;
+            .form-wrapper{
+                width: 500px;
+                margin: 0 auto;
+                .form-control{
+                    margin-top:20px;
+                }
+                .btn-subscribe{
+                    background-color:white; color:black;
+                    transition: ease-in-out .3s;
+                    border:none;
+                    &:hover{
+                        background-color: rgb(191, 191, 191);
+                    }
+                }
+            }
+        }
+
+        
+    }
+    
+}
+@include tablet{
+    .section-footer{
+        height: 1200px;
+        
+        .nav-footer-wrapper{
+            width: 90%;
+            flex-wrap: wrap;
+            height: 600px;
+          
+           
+        }
+        .touch-wrapper{
+            text-align: center;
+            margin:0 auto;
+            z-index: 2;
+            width:70%;
+            height: 500px;
+           
+            color:whitesmoke;
+            .form-wrapper{
+                width: 100%;
+                margin: 0 auto;
+                .form-control{
+                    margin-top:20px;
+                }
+
+            }
+        }
+
+        
+    }
+    
+}
+@include mobile{
+    
+        .btn{
+            width: 100%  !important;
+        }   
+    
+    .section-footer{
+        height: 1400px;
+        text-align: center;
+    
+        .nav-footer-wrapper{
+            width: 95%;
+            flex-wrap: wrap;
+            height: 800px;
+       
+            .footer-content{
+                width: 95%;
+            }
+          
+           
+        }
+        .touch-wrapper{
+            text-align: center;
+            margin:40px auto;
+            z-index: 2;
+            width:70%;
+            height: 800px;
+           
+            color:whitesmoke;
+            .form-wrapper{
+                width: 100%;
+                margin: 0 auto;
+                .form-control{
+                    margin-top:20px;
+                }
+
+            }
+        }
+
+        
+    }
+    
+}

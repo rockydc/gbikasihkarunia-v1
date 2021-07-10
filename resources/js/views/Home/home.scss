@@ -1,0 +1,401 @@
+@import '../../assets/global_variable.scss';
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+  
+}
+
+.msg-pastor-wrapper{
+    padding-top: 200px;
+    padding-bottom:400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .photo-wrapper{
+  
+        flex:1.3;
+        
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:500px;
+          
+        }
+    }
+    .quote-wrapper{
+
+        flex:2;
+     
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            font-size:calc(30px + 0.520834vw);
+            font-weight: 600;
+        }
+       p{
+           font-size:18px;
+           font-weight: 300;
+           color:$smoke;
+       }
+    }
+
+}
+
+.section-news{
+    text-align: center;
+}
+.red-wrapper{
+    .container{
+        max-width: 85% !important; 
+    }
+    position: relative;
+    .bg-img{
+       position: absolute;
+       top:25%;
+       z-index: -2;
+       max-width: 100%;
+    }
+
+    .section-video{
+        padding-top:300px;
+
+        .title-wrapper{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color:whitesmoke;
+            }
+        }
+    }
+}
+
+
+.section-renungan{
+    padding-top:500px;
+    text-align: center;
+    padding-bottom: 200px;
+  
+    .renungan-wrapper{
+      padding-bottom:200px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .btn-renungan{
+        background-color: $merah;
+        border:none;
+        transition: ease-in-out .3s;
+
+        &:hover{
+            background-color:#c31432;
+        }
+
+    }
+
+}
+
+
+
+@include ultradesktop{
+    .red-wrapper{
+        .section-video{
+            padding-top: 150px;
+        }
+    }
+}
+@include superdesktop{
+    .red-wrapper{
+        .section-video{
+            padding-top: 150px;
+        }
+        .bg-img{
+            top:30%;
+        }
+    }
+}
+
+@include desktop{
+    .msg-pastor-wrapper{
+     
+        padding-bottom: 200px;
+        .photo-wrapper{
+            img{
+                width: 300px;
+            }
+        }
+        .quote-wrapper{
+            h1{
+                font-size:calc(20px + 0.520834vw);
+                font-weight: 600;
+            }
+           p{
+               font-size:14px;
+               font-weight: 300;
+               color:$smoke;
+           }
+        }
+    }
+    .section-renungan{
+        padding-top:250px;
+        padding-bottom: 50px;
+    }
+    .red-wrapper{
+        .section-video{
+            padding-top: 100px;
+        }
+        .bg-img{
+            top:35%;
+        }
+    }
+}
+
+@include tablet-xl{
+    .msg-pastor-wrapper{
+        padding-top: 150px;
+        padding-bottom:300px;
+        flex-direction: column;
+        
+        .photo-wrapper{
+        
+            flex:1;
+         
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:80%;
+              
+            }
+        }
+        .quote-wrapper{
+
+            flex:1;
+            padding-top: 75px;
+            display:flex;
+     
+            h1{
+                font-size:calc(30px + 0.520834vw);
+                font-weight: 600;
+            }
+           p{
+               font-size:18px;
+               font-weight: 300;
+               color:$smoke;
+           }
+        }
+    
+    }
+
+    .red-wrapper{
+        .container{
+            max-width: 90% !important; 
+        }
+     
+ 
+        .section-video{
+            padding-top:150px;
+    
+            .title-wrapper{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 25px;
+                    color:black;
+                }
+            }
+        }
+    }
+
+    .section-renungan{
+        padding-top:250px;
+        padding-bottom: 50px;
+        .renungan-wrapper{
+            padding-bottom:200px;
+          
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            .content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+          }
+    }
+}
+
+
+
+@include tablet{
+    .msg-pastor-wrapper{
+        padding-top: 150px;
+        padding-bottom:300px;
+        flex-direction: column;
+        
+        .photo-wrapper{
+        
+            flex:1;
+         
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:80%;
+              
+            }
+        }
+        .quote-wrapper{
+
+            flex:1;
+            padding-top: 75px;
+            display:flex;
+     
+            h1{
+                font-size:calc(30px + 0.520834vw);
+                font-weight: 600;
+            }
+           p{
+               font-size:18px;
+               font-weight: 300;
+               color:$smoke;
+           }
+        }
+    
+    }
+
+    .red-wrapper{
+        .container{
+            max-width: 90% !important; 
+        }
+     
+ 
+        .section-video{
+            padding-top:150px;
+    
+            .title-wrapper{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 25px;
+                    color:black;
+                }
+            }
+        }
+    }
+
+    .section-renungan{
+        padding-top:250px;
+        padding-bottom: 50px;
+        .renungan-wrapper{
+            padding-bottom:200px;
+          
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            .content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+          }
+    }
+}
+
+
+
+@include mobile{
+    .msg-pastor-wrapper{
+        padding-top: 150px;
+        padding-bottom:300px;
+        flex-direction: column;
+        
+        .photo-wrapper{
+        
+            flex:1;
+         
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:80%;
+              
+            }
+        }
+        .quote-wrapper{
+
+            flex:1;
+            padding-top: 75px;
+            display:flex;
+     
+            h1{
+                font-size:calc(30px + 0.520834vw);
+                font-weight: 600;
+            }
+           p{
+               font-size:18px;
+               font-weight: 300;
+               color:$smoke;
+           }
+        }
+    
+    }
+
+    .red-wrapper{
+        .container{
+            max-width: 95% !important; 
+        }
+     
+ 
+        .section-video{
+            padding-top:30px;
+            text-align: center;
+            .row{
+                margin-left:0;
+                margin-right:0;
+            }
+            .title-wrapper{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 25px;
+                    color:black;
+                }
+            }
+        }
+    }
+
+    .section-renungan{
+        padding-top:250px;
+        padding-bottom: 50px;
+        .renungan-wrapper{
+            padding-bottom:200px;
+          
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            .content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+          }
+    }
+}
+
